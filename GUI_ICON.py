@@ -63,7 +63,7 @@ def wnd_classify():
         }
 
     def open():
-        file_path=filedialog.askopenfilename(initialdir="C:/Users/domyl/Desktop/imgGuiProva", title="Seleziona File", filetypes=(("jpg files","*.jpg"),("Tutti i file","*.*")))
+        file_path=filedialog.askopenfilename(initialdir="ImmaginiPerTestare", title="Seleziona File", filetypes=(("jpg files","*.jpg"),("Tutti i file","*.*")))
         uploaded=Image.open(file_path)
         uploaded.thumbnail(((top.winfo_width()/2.25),(top.winfo_height()/2.25)))
         im=ImageTk.PhotoImage(uploaded)
